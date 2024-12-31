@@ -1,9 +1,28 @@
 # Introduction
 
-This is a book created from markdown and executable code.
+Ordem sugerida
 
-See @knuth84 for additional discussion of literate programming.
+1. Planejando  sua  Carreira  para  as  Profissões  do  Futuro
 
-```{r}
-1 + 1
-```
+2. Introdução à Lógica de Programação
+
+3. Sistema  Operacional  Linux,  Docker  e  Kubernetes
+
+4. Governança de Dados
+
+5. Soft    Skill-Desenvolvendo    Suas    Habilidades    Comportamentais
+
+6. E-Gov Analytics
+
+7. Machine Learning com JavaScript e Go
+
+8. Data Science e Machine Learning com Linguagem Julia
+
+9. Deep Learning Para Aplicações de Inteligência Artificial com Python e C++
+
+10. Aplicações de LLM na área médica
+
+11. IA Generativa e LLM para processamento de linguagem natural
+
+12. IA Generativa e LLM para área do direito
+

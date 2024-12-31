@@ -10,13 +10,15 @@ book:
     - index.qmd
     - intro.qmd
     - summary.qmd
+    - js_go.qmd
+    - dl1.qmd
     - references.qmd
 
 bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: lux
   pdf:
     documentclass: scrreprt
 

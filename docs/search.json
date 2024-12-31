@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "pos-pln",
+    "section": "",
+    "text": "Preface"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Ordem sugerida\n\nPlanejando sua Carreira para as Profissões do Futuro\nIntrodução à Lógica de Programação\nSistema Operacional Linux, Docker e Kubernetes\nGovernança de Dados\nSoft Skill-Desenvolvendo Suas Habilidades Comportamentais\nE-Gov Analytics\nMachine Learning com JavaScript e Go\nData Science e Machine Learning com Linguagem Julia\nDeep Learning Para Aplicações de Inteligência Artificial com Python e C++\nAplicações de LLM na área médica\nIA Generativa e LLM para processamento de linguagem natural\nIA Generativa e LLM para área do direito"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "js_go.html#definition",
+    "href": "js_go.html#definition",
+    "title": "3  Machine Learning com JavaScript e Go",
+    "section": "3.1 Definition :",
+    "text": "3.1 Definition :\n\nJavaScript pode ser executada no navegador ou por uma Engine, o Chrome, Opera e Edge utilizam a engine V8 e o Firefox a SpiderMonkey, já no servidor podemos utilizar o Node.Js"
+  },
+  {
+    "objectID": "js_go.html#livros-e-links-úteis",
+    "href": "js_go.html#livros-e-links-úteis",
+    "title": "3  Machine Learning com JavaScript e Go",
+    "section": "3.3 Livros e links úteis",
+    "text": "3.3 Livros e links úteis\n\nJavaScript The Definitive Guide (David Fionagan) PDF\nEloquent JavaScript https://github.com/braziljs/eloquente-javascript?tab=readme-ov-file\nJavaScript - Mozilla\nECMAScript® 2025 Language Specification"
+  },
+  {
+    "objectID": "js_go.html#section",
+    "href": "js_go.html#section",
+    "title": "3  Machine Learning com JavaScript e Go",
+    "section": "3.3 ",
+    "text": "3.3"
+  },
+  {
+    "objectID": "js_go.html#para-rodar-o-projeto",
+    "href": "js_go.html#para-rodar-o-projeto",
+    "title": "3  Machine Learning com JavaScript e Go",
+    "section": "3.2 Para rodar o projeto",
+    "text": "3.2 Para rodar o projeto\n\n3.2.1 Instalar Node.js , exemplo on (linux mint)\n\nDownload bin nodejs.org\nCriar os diretórios\n\nsudo mkdir -p /usr/local/lib/nodejs\nsudo tar -xJvf node-v14.18.0-linux-x64.tar.xz -C /usr/local/lib/nodejs\n\nEditar o .profile, abrir xed ~/.profile & e adicionar :\n\n# Nodejs\nVERSION=vXXXXX\nDISTRO=linux-x64\nexport PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH\n\n\nVerificar versões :\n\nnode -v\nnpm version\nnpx -v\n\n\n3.2.2 To Run :\nCom estes comandos vamos testar em DEV e fazer o build para acessar http://localhost:4500\n\nPara testar\n\nnpm install\nnpm run dev\n\nPara deploy\n\nnpm install\nnpm run build\nnpm run start"
+  }
+]

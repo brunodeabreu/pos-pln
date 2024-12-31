@@ -1,0 +1,92 @@
+---
+title: "Machine Learning com JavaScript e Go"
+format: html
+---
+
+
+
+## Definition : 
+
+  * **JavaScript** pode ser executada no navegador ou por uma Engine, o Chrome, Opera e Edge utilizam a engine V8 e o Firefox a SpiderMonkey, já no servidor podemos utilizar o **Node.Js**
+
+
+## Para rodar o projeto
+
+### Instalar **Node.js** , exemplo on _(linux mint)_
+
+1. Download bin [nodejs.org](https://nodejs.org/en/download)
+
+2. Criar os diretórios
+
+```
+sudo mkdir -p /usr/local/lib/nodejs
+sudo tar -xJvf node-v14.18.0-linux-x64.tar.xz -C /usr/local/lib/nodejs
+```
+
+3. Editar o **.profile**, abrir `xed ~/.profile &` e adicionar : 
+
+```
+# Nodejs
+VERSION=vXXXXX
+DISTRO=linux-x64
+export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH
+
+```
+
+4. Verificar versões : 
+
+```
+node -v
+npm version
+npx -v
+```
+
+
+### To Run :
+
+Com estes comandos vamos testar em DEV e fazer o build para acessar _http://localhost:4500_
+
+
+1. Para testar
+
+```
+npm install
+npm run dev
+```
+
+2. Para deploy
+
+```
+npm install
+npm run build
+npm run start
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+## Livros e links úteis
+
+  * JavaScript The Definitive Guide _(David Fionagan)_ [PDF](https://github.com/camoverride/lit/blob/master/Javascript-The-Definitive-Guide.pdf)
+
+  * [Eloquent JavaScript](https://eloquentjavascript.net) [https://github.com/braziljs/eloquente-javascript?tab=readme-ov-file](Github - pt-BR)
+  
+  * [JavaScript - Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+  
+  * [ECMAScript® 2025 Language Specification](https://tc39.es/ecma262)
+  
