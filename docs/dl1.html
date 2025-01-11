@@ -141,7 +141,30 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="header-section-number">4.1</span> Intro</a>
+  <ul class="collapse">
+  <li><a href="#história" id="toc-história" class="nav-link" data-scroll-target="#história"><span class="header-section-number">4.1.1</span> História :</a></li>
+  <li><a href="#arquiteturas" id="toc-arquiteturas" class="nav-link" data-scroll-target="#arquiteturas"><span class="header-section-number">4.1.2</span> Arquiteturas :</a></li>
+  <li><a href="#conceitos" id="toc-conceitos" class="nav-link" data-scroll-target="#conceitos"><span class="header-section-number">4.1.3</span> Conceitos</a></li>
+  <li><a href="#mais-detalhes-sobre-algumas-redes-e-arquiteturas" id="toc-mais-detalhes-sobre-algumas-redes-e-arquiteturas" class="nav-link" data-scroll-target="#mais-detalhes-sobre-algumas-redes-e-arquiteturas"><span class="header-section-number">4.1.4</span> Mais detalhes sobre Algumas redes e arquiteturas</a></li>
+  <li><a href="#transfer-learning-e-modelos-pré-treinados" id="toc-transfer-learning-e-modelos-pré-treinados" class="nav-link" data-scroll-target="#transfer-learning-e-modelos-pré-treinados"><span class="header-section-number">4.1.5</span> Transfer Learning e Modelos Pré-treinados</a></li>
+  <li><a href="#ótimização-e-regularização" id="toc-ótimização-e-regularização" class="nav-link" data-scroll-target="#ótimização-e-regularização"><span class="header-section-number">4.1.6</span> Ótimização e Regularização</a></li>
+  <li><a href="#hugging-face" id="toc-hugging-face" class="nav-link" data-scroll-target="#hugging-face"><span class="header-section-number">4.1.7</span> Hugging Face</a></li>
+  <li><a href="#explorando-o-chatgpt" id="toc-explorando-o-chatgpt" class="nav-link" data-scroll-target="#explorando-o-chatgpt"><span class="header-section-number">4.1.8</span> Explorando o ChatGPT</a></li>
+  <li><a href="#configuração-do-amiente-de-desenvolvimento" id="toc-configuração-do-amiente-de-desenvolvimento" class="nav-link" data-scroll-target="#configuração-do-amiente-de-desenvolvimento"><span class="header-section-number">4.1.9</span> Configuração do Amiente de Desenvolvimento</a></li>
+  </ul></li>
+  <li><a href="#fundamentos" id="toc-fundamentos" class="nav-link" data-scroll-target="#fundamentos"><span class="header-section-number">4.2</span> Fundamentos</a>
+  <ul class="collapse">
+  <li><a href="#how-backpropagation-algorithm-works" id="toc-how-backpropagation-algorithm-works" class="nav-link" data-scroll-target="#how-backpropagation-algorithm-works"><span class="header-section-number">4.2.1</span> How backpropagation algorithm works:</a></li>
+  </ul></li>
+  <li><a href="#projecto-1" id="toc-projecto-1" class="nav-link" data-scroll-target="#projecto-1"><span class="header-section-number">4.3</span> Projecto 1</a></li>
+  <li><a href="#referencia" id="toc-referencia" class="nav-link" data-scroll-target="#referencia"><span class="header-section-number">4.4</span> Referencia :</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -163,8 +186,211 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="intro" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="intro"><span class="header-section-number">4.1</span> Intro</h2>
+<section id="história" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="história"><span class="header-section-number">4.1.1</span> História :</h3>
+<ul>
+<li><strong>1943</strong> : Conceito de um modelo de rede neural</li>
+<li><strong>1958</strong> : Perceptron <em>(primeira arquitetura de rede neural)</em></li>
+<li><strong>1969</strong> : Pesquisadores publicam que o perceptron não funciona</li>
+<li><pre><code> : **Inverno da IA**</code></pre></li>
+<li><strong>1986</strong> : Backpropagation</li>
+<li><strong>1989</strong> : RNN - revulução na PLN</li>
+<li><strong>1997</strong> : LSTM, variante da RNN</li>
+<li><strong>2012</strong> : AlexNet vence ImageNet</li>
+<li><strong>2017</strong> : Arquitetura Transformer, paper <strong>Attention is All You Need</strong></li>
+<li><strong>2020</strong> : LLM <em>(GPT-3)</em></li>
+<li><strong>2022</strong> : OpenAI publica ChatGPT</li>
+<li><strong>Hoje</strong> : LLM - IA Generativa</li>
+</ul>
+</section>
+<section id="arquiteturas" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="arquiteturas"><span class="header-section-number">4.1.2</span> Arquiteturas :</h3>
+<ul>
+<li><strong>DNN</strong> : (<em>Redes neurais desamente conectadas</em>)</li>
+<li><strong>CNN</strong> : (<em>Redes neurais convolucionais</em>)</li>
+<li><strong>RNN</strong> : (<em>Redes Neurais Recorrentes</em>)</li>
+<li><strong>Autoencoders</strong></li>
+<li><strong>GANs</strong> : (<em>Redes Adversariais Generativas</em>)</li>
+<li><strong>Redes Siamesas</strong></li>
+<li><strong>Modelos de Capsule</strong></li>
+<li><strong>Modelos de Atenção e Transformes</strong></li>
+</ul>
+</section>
+<section id="conceitos" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="conceitos"><span class="header-section-number">4.1.3</span> Conceitos</h3>
+<ul>
+<li><p><strong>Activation function</strong> : Introduzem a não linearidade o que permite que a rede modelo funções complexas e regularização, alguns tipos de <strong>funções de ativação</strong> Sigmoid, Tanh, ReLU ( Leaky ReLU, Parametric ReLU, GenLU)</p></li>
+<li><p><strong>Overfitting</strong> : Quando o modelo aprende demais sobre os dados e não consegue generalizar</p></li>
+<li><p><strong>Underfitting</strong> : Quando o modelo é muito simples. não se ajusta aos dados de treino, ou seja , o modelo não aprendeuos padrões dos dados</p></li>
+<li><p><strong>Regularizaçáo</strong>: <strong>L1</strong> (<em>penaliza soma absoluta</em>) e <strong>L2</strong> (<em>penaliza a soma dos quadrados</em>) são tecnicas de regressão linear e logística</p></li>
+<li><p><strong>Dropout</strong> : certos neurônios são desligados <strong>aleatoriamente</strong> em cada interação</p></li>
+<li><p><strong>Early Stopping</strong> : interrompe o treinamento assim que o desempenho começam a degradar.</p></li>
+<li><p><strong>Loss function</strong> : quantifica o quão bem as previsões de um modelo se alinham com os valores reais observados. A escolha da função depende do tipo de problema a ser resolvido:</p>
+<ul>
+<li><strong>Regressão</strong> : MSE, MAE</li>
+<li><strong>Classificação</strong>: Emtropia cruzada ou log loss, Hinge Loss</li>
+<li><strong>Modelos Generativos <em>GANs</em></strong>: Gradiente descendente</li>
+</ul></li>
+<li><p><strong>Tools and Frameworks</strong></p></li>
+<li><p>Frameworks Python : PyTorch, TensorFlow, MxNet, JAX, ONNX</p></li>
+<li><p>Bibliotecas C++ : Armadillo, MLPack</p></li>
+<li><p><strong>Backpropagation</strong></p>
+<ul>
+<li><p>O modelo irá fazer a primeira passada de calculo <strong>Forward Pass</strong> e calcular o erro.</p></li>
+<li><p>Depois disso o algoritmo de <strong>Backpropagation</strong> irá através de cálculos de derivadas reduzir o erro do modelo (<em><em>Loss</em></em>), isso é feito alterando os pesos novamente com objetivo de reduzir o erro final.</p></li>
+<li><p>Novo peso = Peso anterior - Derivada * <em>Learing Rate</em></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="mais-detalhes-sobre-algumas-redes-e-arquiteturas" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="mais-detalhes-sobre-algumas-redes-e-arquiteturas"><span class="header-section-number">4.1.4</span> Mais detalhes sobre Algumas redes e arquiteturas</h3>
+<ul>
+<li><p><strong>CNN</strong> : Utilizada para detecção de objetos e lidar com imagens</p></li>
+<li><p><strong>RNN</strong> : Utilizadas para linguagem natural ou series temporais, capaz de manter um estado de memória. Temos algumas variações LSTM <em>(Long Short-term memory)</em> e GRU <em>(Gated Recurrent Units)</em></p></li>
+<li><p><strong>Redes Neurais Generativas</strong> : Redes que permitem a geração de novos dados semelhantes aos dados que foram treinados, uma arquitetura de Redes generativas é a <strong>GANs</strong> <em>(Redes Adversariais Generativas)</em> que são duas redes treinadas simultaneamente <em>(O gerador e o discriminador)</em></p>
+<ul>
+<li><p>Gerador : Produz dados novos a partir de ruído aleatório</p></li>
+<li><p>Discriminador : Tenta distinguir entre amostras geradas <em>(fake)</em> e dados reais</p></li>
+<li><p>O treinamento contiua até que o gerador se torne suficientemente bom para produzir dados que o discriminador não consiga diferenciar entre reais ou fake.</p></li>
+<li><p>Outro tipo de rede neural generativa é o <strong>Modelo Autorregressivo</strong> como PixelRNN, utilizado para gerar imagens ou música,</p></li>
+<li><p>Temos também <strong>Redes Geradoras de Momento Variacional</strong> <em>(Variacional Autoencoders <strong>VAEs</strong>)</em> : A ideia é aprender a distribuição latente dos dados de entrada e em sequida gerar novos dados</p></li>
+</ul></li>
+<li><p><strong>Mecanismos de Atenção e Transformadores</strong>: focam e partes específicas da entrada</p></li>
+</ul>
+</section>
+<section id="transfer-learning-e-modelos-pré-treinados" class="level3" data-number="4.1.5">
+<h3 data-number="4.1.5" class="anchored" data-anchor-id="transfer-learning-e-modelos-pré-treinados"><span class="header-section-number">4.1.5</span> Transfer Learning e Modelos Pré-treinados</h3>
+<ul>
+<li><p><em>Transfer Learning</em> é uma técnica onde um modelo desenvolvida para uma tarefa é reutilizado como ponto de partida para outra tarefa relacionada, <em>pode ser utilizado como estratégia de inicialização de pesos</em></p></li>
+<li><p><em>Modelos pré-treinados</em> são modelos ja treinados em grandes bases de dados:</p>
+<ul>
+<li><p><strong>Visão Computacional</strong> : VGGNet, ResNet, Inspectino</p></li>
+<li><p><strong>PLN</strong> : BERT, GPT, Llama, T5</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="ótimização-e-regularização" class="level3" data-number="4.1.6">
+<h3 data-number="4.1.6" class="anchored" data-anchor-id="ótimização-e-regularização"><span class="header-section-number">4.1.6</span> Ótimização e Regularização</h3>
+<ul>
+<li><p><strong>Otimização</strong> : processo de ajustar os parâmetros (<em>pesos</em>) do modelo com o objetivo de minimizar a função de perda e com isso encontrar o conjunto ótimo de parametros que resulte na melhor performance do modelo, algoritmos utilizados :</p>
+<ul>
+<li>Gradiente descendente</li>
+<li>Gradiente descendente Estocastico (SGD)</li>
+<li>Momentum</li>
+<li>Adam</li>
+<li>Batch Normalization</li>
+</ul></li>
+<li><p><strong>Regularização</strong> conjunto de técnicas que visam impedir o overfitting, algumas técnicas :</p>
+<ul>
+<li>L1 e L2</li>
+<li>Dropout <em>(Desativa neuronios durante o treinamento)</em></li>
+<li>Early Stopping <em>(Interronpe o treinamento assim que a performance piora)</em></li>
+</ul></li>
+</ul>
+</section>
+<section id="hugging-face" class="level3" data-number="4.1.7">
+<h3 data-number="4.1.7" class="anchored" data-anchor-id="hugging-face"><span class="header-section-number">4.1.7</span> Hugging Face</h3>
+<p>Grante primeira tentativa de criar LLM <em>(Large Language Model)</em></p>
+<ul>
+<li><p><a href="https://huggingface.co/docs/transformers/en/model_doc/berthttps://huggingface.co/docs/transformers/en/model_doc/bert">BERT Doc</a></p></li>
+<li><p><a href="https://huggingface.co/google-bert/bert-base-uncased">BERT Model card</a></p></li>
+<li></li>
+</ul>
+</section>
+<section id="explorando-o-chatgpt" class="level3" data-number="4.1.8">
+<h3 data-number="4.1.8" class="anchored" data-anchor-id="explorando-o-chatgpt"><span class="header-section-number">4.1.8</span> Explorando o ChatGPT</h3>
+<p>Explore o [ChatGPT]}(https://chatgpt.com/)</p>
+<ol type="1">
+<li>Modeli simples</li>
+<li>Modelo complexo</li>
+</ol>
+</section>
+<section id="configuração-do-amiente-de-desenvolvimento" class="level3" data-number="4.1.9">
+<h3 data-number="4.1.9" class="anchored" data-anchor-id="configuração-do-amiente-de-desenvolvimento"><span class="header-section-number">4.1.9</span> Configuração do Amiente de Desenvolvimento</h3>
+<ul>
+<li><a href="https://www.anaconda.com/">Anaconda</a></li>
+<li><a href="https://colab.research.google.com/">Google Colab</a></li>
+<li>Visual Studio Code</li>
+</ul>
+</section>
+</section>
+<section id="fundamentos" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="fundamentos"><span class="header-section-number">4.2</span> Fundamentos</h2>
+<ul>
+<li><strong>Perceptron</strong> : algoritmo de aprendizagem supervisionada para classificação binária, resolve problemas linearmente separáveis</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/perceptron.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Perceptron</figcaption>
+</figure>
+</div>
+<p>Os pesos é justamente o que o modelo aprende durante o treinamento.</p>
+<ul>
+<li><p><strong>MLP</strong> <em>(Multi layer perceptron)</em></p></li>
+<li><p>Criação do algoritmo de <strong>backpropagation</strong> que permite que as redes de múltiplas camadas ajustassem os pesos de forma eficaz e possibilitou a resolução de problemas não lineares.</p></li>
+<li><p>MLPs são compostas por uma camada de entrada, uma ou mais camadas ocultas e uma camada de saída</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/MLP.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">MLP</figcaption>
+</figure>
+</div>
+<section id="how-backpropagation-algorithm-works" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="how-backpropagation-algorithm-works"><span class="header-section-number">4.2.1</span> How backpropagation algorithm works:</h3>
+<ol type="1">
+<li><p><strong>Forward Pass</strong>: During the forward pass, input data is fed into the neural network, and the network’s output is computed layer by layer. Each neuron computes a weighted sum of its inputs, applies an activation function to the result, and passes the output to the neurons in the next layer.</p></li>
+<li><p><strong>Loss Computation</strong>: After the forward pass, the network’s output is compared to the true target values, and a loss function is computed to measure the discrepancy between the predicted output and the actual output.</p></li>
+<li><p><strong>Backward Pass</strong> (Gradient Calculation): In the backward pass, the gradients of the loss function with respect to the network’s parameters (weights and biases) are computed using the chain rule of calculus. The gradients represent the rate of change of the loss function with respect to each parameter and provide information about how to adjust the parameters to decrease the loss.</p></li>
+<li><p><strong>Parameter update</strong>: Once the gradients have been computed, the network’s parameters are updated in the opposite direction of the gradients in order to minimize the loss function. This update is typically performed using an optimization algorithm such as stochastic gradient descent (SGD), that we discussed earlier.</p></li>
+<li><p><strong>Iterative Process</strong>: Steps 1-4 are repeated iteratively for a fixed number of epochs or until convergence criteria are met. During each iteration, the network’s parameters are adjusted based on the gradients computed in the backward pass, gradually reducing the loss and improving the model’s performance.</p></li>
+</ol>
+</section>
+</section>
+<section id="projecto-1" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="projecto-1"><span class="header-section-number">4.3</span> Projecto 1</h2>
+<p><a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need:</a></p>
+<p>Exemplo simples para visualizar os modulos e a camada de atenção:</p>
+<ul>
+<li><p><a href="https://drive.google.com/file/d/1oG-yhFLZaSZn10izMBsXYQmL0eGSG-rG/view?usp=sharing">Jupyter Notebook Project 1</a></p></li>
+<li><p>Na arquitetura transformes o mecanismo de atenção do tipo (<em>Scaled dot-product</em>) utiliza três componentes :</p>
+<ul>
+<li><p><strong>Q</strong>_(Query)_ : representa parte que estamos interessados, por exemplo : Em PLN poderia ser a frase que estamos tentando traduzir. Em um modelo transformer para cada posição uma query é gerada e são usadas para pontar a qualidade da entrada.</p></li>
+<li><p><strong>K</strong>_(Key)_ : Usada para pontar a entrada e comparada com a query para determinar o grau de atenção, essa comparação resulta em um conjunto de pontuação que indica a relevancia de cada parta da entrada para representar a query</p></li>
+</ul>
+<blockquote class="blockquote">
+<p>K e Q determina onde o modelo deve focar</p>
+</blockquote>
+<ul>
+<li><strong>V</strong>_(Value)_ : contém a info real que queremos extrair, compoe a saida do mecanismo de atenção, cada <strong>value</strong> é associado a uma <strong>key</strong>.</li>
+</ul>
+<blockquote class="blockquote">
+<p>O mecanismo de atenção calcula um conjunto de pontuações e aplica softmax para obter pesos de atenção e usa esses pesos para ponderar os values, criando uma saída .</p>
+</blockquote></li>
+</ul>
+</section>
+<section id="referencia" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="referencia"><span class="header-section-number">4.4</span> Referencia :</h2>
+<ul>
+<li><p><a href="https://www.deeplearningbook.com.br/">Deep Learning book</a></p></li>
+<li><p><a href="https://www.deeplearningbook.com.br/algoritmo-backpropagation-parte-2-treinamento-de-redes-neurais/">Algoritmo Backpropagatio</a></p></li>
+<li><p><a href="https://epochai.org/blog/backward-forward-FLOP-ratio">What’s the Backward-Forward FLOP Ratio for Neural Networks?</a></p></li>
+<li><p><a href="https://www.researchgate.net/figure/Forward-and-backward-passes-during-inference-and-backpropagation_fig2_327068529">Forward e Backward Pass</a></p></li>
+<li><p>[A Comprehensive Guide to the Backpropagation Algorithm in Neural Networks](https://neptune.ai/blog/backpropagation-algorithm-in-neural-networks-guide]</p></li>
+<li><p><a href="https://www.nomidl.com/deep-learning/what-is-forward-and-backward-propagation-in-deep-learning/">What is forward and backward propagation in Deep Learning?</a></p></li>
+</ul>
+<p>*[A Deep Dive Into the Transformer Architecture –The Development of Transformer Models](https://www.exxactcorp.com/blog/Deep-Learning/a-deep-dive-into-the-transformer-architecture-the-development-of-transformer-models</p>
+<ul>
+<li><p><a href="https://www.cienciaedados.com/3-alternativas-para-usar-llms/">3 Alternativas Para Usar LLMs</a></p></li>
+<li><p><a href="https://quantdare.com/transformers-is-attention-all-we-need-in-finance-part-i">Transformers: is attention all we need in finance?</a></p></li>
+<li><p><a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a></p></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
